@@ -1,0 +1,12 @@
+{
+  "name": "TL-Client",
+  "version": "1.0.0",
+  "description": "TL-Client",
+  "main": "js/main-bundle.js",
+  "repository": "https://github.com/electron/electron-quick-start",
+  "keywords": [
+    "carymao"
+  ],
+  "author": "MaoJun",
+  "license": "CC0-1.0"
+}

@@ -1,0 +1,129 @@
+@import "../base/spacing";
+
+.message {
+  &:extend(.flex);
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 13.5px;
+  padding: 10px 15px;
+  margin-bottom: 20px;
+  border-radius: 2px;
+
+  strong {
+    font-weight: 600;
+  }
+
+  > i {
+    font-size: 16px;
+    margin-right: 10px;
+  }
+
+  .btn {
+    background: transparent;
+    margin-left: auto; // message buttons are always pulled to the right
+  }
+
+  ul {
+    list-style: disc;
+    margin-left: 20px;
+  }
+
+  &.success {
+    background: @background-message--success;
+    color: @color-message--success;
+    border-color: @border-message--success;
+
+    i {
+     color: @color-message--success;
+    }
+
+    .btn {
+      border-color: @border-message--success;
+      color: @color-message--success;
+
+      &:focus,
+      &:active {
+        border-color: @color-message--success;
+      }
+
+      &:hover {
+        background: @background-message--success;
+      }
+    }
+  }
+
+  &.primary {
+    background: @background-message--primary;
+    color: @color-message--primary;
+    border-color: @border-message--primary;
+
+    i {
+     color: @color-message--primary;
+    }
+
+    .btn {
+      border-color: @border-message--primary;
+      color: @color-message--primary;
+
+      &:focus,
+      &:active {
+        border-color: @color-message--primary;
+      }
+
+      &:hover {
+        background: @background-message--primary;
+      }
+    }
+  }
+
+  &.info {
+    background: @background-message--info;
+    color: @color-message--info;
+    border-color: @border-message--info;
+
+    i {
+     color: @color-message--info;
+    }
+
+    .btn {
+      border-color: @color-message--info;
+      color: @color-message--info;
+
+      &:focus,
+      &:active {
+        border-color: @color-message--info;
+      }
+
+      &:hover {
+        background: @background-message--info;
+      }
+    }
+  }
+
+  &.error {
+    background: @background-message--error;
+    color: @color-message--error;
+
+    i {
+     color: @color-message--error;
+    }
+
+    .btn {
+      border-color: @color-message--error;
+      color: @color-message--error;
+
+      &:focus,
+      &:active {
+        border-color: @color-message--error;
+      }
+
+      &:hover {
+        background: shade(@background-message--error, 3%);
+      }
+    }
+  }
+
+  a:not(.btn) {
+    text-decoration: underline;
+  }
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../stylesheets/icons.css">
+    <link rel="stylesheet" href="../stylesheets/fonts/font-awesome.css">
+    <link rel="stylesheet" href="../stylesheets/common.css">
+    <link rel="stylesheet" href="../stylesheets/shell-window.css">
+</head>
+
+<body style="width:100%;height:100%">
+    <div id="win32-titlebar"></div>
+    <header class="header">
+        <div class="logoBar">
+            <div class="logo"></div>
+            <div id="operateCity"></div>
+        </div>
+        <div class="noticeBar">
+            <i class="anticon anticon-sound"></i>
+            <span style="width: 320px;"></span>
+            <span style="width: 220px;">2018年5月3日 星期四 农历三月十八</span>
+            <i class="anticon anticon-clock-circle"></i>
+            <span style="width: 70px;">16:30:16</span>
+        </div>
+    </header>
+    <webview src="http://192.168.1.14/client/web/index.html" preload="../js/common-bundle.js" nodeintegration style="display:flex;width:100%;height:700px"></webview>
+    <script src="../js/mainpage-bundle.js"></script>
+</body>
+
+</html>
